@@ -2,7 +2,11 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
+    /* height: 100%;
+  margin: 0;
+  padding: 0; */
   }
+ 
   
   *{
       margin: 0;
@@ -17,7 +21,7 @@ body{
   }
   section{
       width:  100%;
-      height: 100vh;
+      height: 90vh;
   
   }
   section nav{
@@ -139,6 +143,7 @@ body{
   
   /* about */
   .about{
+    margin-top: 100px;
       width: 100%;
       height: 100vh;
       padding: 10px 0;
@@ -152,13 +157,13 @@ body{
   .about .about_main .image img{
       width: 430px;
       position: relative;
-      top:90px;
+      /* top:10px; */
       border-radius: 6%;
       
   }
   .about_main .about_text{
       position: relative;
-      top: 70px;
+      /* top: 5px; */
       /* width: 550px; */
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       line-height: 22px;
@@ -191,7 +196,7 @@ body{
       color: #fff;
       position: relative;
       left: 55%;
-      top: 60px;
+      /* top: 60px; */
   }
   
   
@@ -199,7 +204,7 @@ body{
   .services{
       width: 100%;
       padding: 140px 0;
-      top: -200px;
+      top: -100px;
       position: relative;
   }
   .services h1{
@@ -221,7 +226,7 @@ body{
       background: rgb(16, 230, 16);
       display: block;
       position: relative;
-      bottom: 15px;
+      /* bottom: 15px; */
   }
   .services h2{
       margin-left: 200px;
@@ -233,15 +238,17 @@ body{
       width: 95%;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr ;
       grid-gap: 15px;
   }
   .services .services_box .services_card{
       width: 325px;
       height: 380px;
-      padding-top: 10px;
+    
+      padding-bottom: 100px;
       /* margin-bottom: 30px; */
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      gap: 30px;
   
   }
   .services .services_box .services_card .services_image{
@@ -253,11 +260,12 @@ body{
   }
   .services .services_box .services_card .services_image img{
       width: 250px;
-      height: 100%;
+      /* height: 100%; */
       object-fit: cover;
       object-position: center;
       transition: 0.3s;
       border-radius: 50px;
+
   }
   .services .services_box .services_card .services_image:hover img{
       transform: scale(1.1);
@@ -267,7 +275,7 @@ body{
       height: 45px;
       float: right;
       position: relative;
-      top: -240px;
+      /* top: -240px; */
       right: -8px;
       opacity: 1;
       border-radius: 7px;
@@ -275,7 +283,7 @@ body{
   }
   .services .services_box .services_card:hover .small_card{
       position: relative;
-      top: -240px;
+      /* top: -240px; */
       right: 20px;
       opacity: 1;
   
@@ -303,18 +311,18 @@ body{
   }
   .services .services_box .services_card .services_info p{
       text-align: center;
-      margin-top: 8px;
+      /* margin-top: 8px; */
       line-height: 21px;
   }
   .services .services_box .services_card .services_info h3{
       text-align: center;
-      margin-top: 10px;
+      /* margin-top: 10px; */
   
   }
   .services .services_box .services_card .services_info .services_icon{
       color: rgb(16, 230, 16);
       text-align: center;
-      margin: 10px 0 20px 0;
+      /* margin: 10px 0 20px 0; */
   }
   .services .services_box .services_card .services_info .services_btn{
       display: flex;
@@ -323,17 +331,17 @@ body{
       text-decoration: none;
       color: #f3e9e9;
       background: rgb(16, 230, 16);
-      padding: 8px 10px;
-      margin: 0 50px;
+      /* padding: 8px 10px; */
+      /* margin: 0 50px; */
       transition: 0.3s;
   }
   
   .contactus{
       text-align: center;
       background-color:rgb(248,163,63);
-      padding: 20px 0px;
-      bottom: 200px;
-      position: relative;
+      /* padding: 20px 0px; */
+      /* bottom: 200px; */
+      /* position: relative; */
   }
   h1{
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -341,7 +349,7 @@ body{
       font-size: xx-large;
   }
   #message{
-      padding: 60px;
+      /* padding: 60px; */
       border: solid 1px green;
   }
   a{
@@ -352,14 +360,14 @@ body{
       background-color: rgb(94,196,23);
       border-radius: 25PX;
       border: none ;
-      top: 20px;
+      /* top: 20px; */
       position: relative;
   }
   .contactinfo{
      display: grid;
      grid-template-columns: repeat(1, 2fr);
      margin-bottom: 2%;
-     top: 30px;
+     /* top: 30px; */
      position: relative;
   }
   .contact{
@@ -384,9 +392,11 @@ body{
   .Footer{
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      background-color: antiquewhite;
+      background-color: green;
+      background-size: cover;
+      height: 30vh;
       position: relative;
-      bottom: 80px;
+      /* bottom: 180px; */
   }
   li{
       list-style: none;
@@ -397,6 +407,17 @@ body{
   }
   .icon{
      font-size: x-large;
+  }
+  .img2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+    /* top: 30px; */
+
+  }
+  .img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
   
 @media screen and(max-width:768px){
@@ -482,6 +503,7 @@ body{
       
   }
   .img2{
+    display: grid;
     margin-left: 30px;
   }
 
@@ -526,7 +548,8 @@ body{
       font-size: 22px;
   }
   .services .services_box{
-      grid-template-columns: 1fr ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
 
       width:5% ;
      position: relative;
@@ -543,9 +566,10 @@ body{
       margin-top: 180px;
   }
   .services .services_box .services_card .services_image{
-    margin-right: 200x;
+    margin-right: 200px;
       width: 100%;
-        height: 20}
+        height: 20%;
+    }
       
         .services_box{
             display: grid;
