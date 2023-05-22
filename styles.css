@@ -25,7 +25,7 @@ body{
     /* position: fixed; */
     /* width: 100%; */
 
-} */
+*/
 li{
     list-style: none;
     margin-top: 3%;
@@ -40,6 +40,7 @@ a{
     text-decoration: none;
     color: white;
     font-size: x-large;
+    right: 30px;
 }
 #logo{
     margin-top: -25px;
@@ -192,16 +193,18 @@ li{
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
-
-* {
+/* * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-  }
+    /* box-sizing: border-box; */
+  
   body{
-    color: rgb(82, 72, 72);
+    color: rgb(82, 72, 72); */
   }
   header a {
     text-decoration: none;
@@ -212,6 +215,7 @@ li{
     height: 50px;
     padding-top: 10px;
     display: flex;
+    justify-content: space-around;
     width: 100%;
     /* justify-content: space-between; */
   }
@@ -222,7 +226,7 @@ li{
     font-weight: bold;
     font-size: 18px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
   }
   ul {
@@ -239,18 +243,21 @@ li{
 
   }
   ul a {
-    color:purple;
+    color:white;
     font-weight: lighter;
     position: relative;
     bottom: 0px;
     font-size: x-large;
+    /* background-color: black; */
    
 
 
   }
   #logo{
-    margin-left: 180%;
-    margin-top: -100;
+    position: relative;
+    right: px;
+    /* margin-left: 10%; */
+    
 
   }
   ul nav{
@@ -291,9 +298,18 @@ li{
   .open .mobile-menu {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
+    /* padding-right: 10px; */
     justify-content: flex-start;
     font-size: xx-small;
+    /* position: relative; */
+    float: right ;
+  
+  }
+  .open .mobile-menu a{
+font-size: medium;
+
+
   }
   .mobile-menu {
     display: none;
@@ -302,6 +318,7 @@ li{
     left: 0;
     height: calc(100vh - 50px);
     width: 100%;
+    height: 30%;
   }
   .mobile-menu li {
     margin-bottom: 5px;
@@ -319,10 +336,17 @@ li{
     header {
       /* padding: 0 20px; */
       background-color:rgb(106, 156, 106);
-      height: 50px;
-      padding-top: 10px;
+      height: 30px;
+      /* padding-top: 10px; */
       display: flex;
       width: 100%;
+  }
+  ul{
+    background-color:rgb(106, 156, 106);
+    /* height:5px;
+    width: 5px;
+    padding: 10px; */
+
   }
 
       
@@ -336,11 +360,13 @@ li{
     body{
         overflow-x: hidden;
         margin: 0%;
-        padding: 1%;
+        /* padding: 1%; */
         font-size: small;
     }
     #logo{
-        display: none !important;
+      padding: 0px 0px 0px 5px;
+    
+        /* display: none !important; */
     }
     #hm{
         padding: 0%;
